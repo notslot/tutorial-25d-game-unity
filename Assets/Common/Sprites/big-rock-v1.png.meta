@@ -6,11 +6,11 @@ TextureImporter:
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
-    borderMipMap: 0
+    borderMipMap: 1
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
@@ -44,13 +44,13 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 7
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0.03
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -121,7 +121,27 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites: []
-    outline: []
+    outline:
+    - - {x: 483.5, y: -320}
+      - {x: 486.5, y: -282}
+      - {x: 442.5, y: -165}
+      - {x: 358.5, y: -22}
+      - {x: 314.5, y: 138}
+      - {x: 256.5, y: 220}
+      - {x: 119.5, y: 246}
+      - {x: 45.5, y: 245}
+      - {x: -44.5, y: 368}
+      - {x: -310.5, y: 376}
+      - {x: -429.5, y: 303}
+      - {x: -431.5, y: 158}
+      - {x: -466.5, y: 72}
+      - {x: -454.5, y: 2}
+      - {x: -487.5, y: -185}
+      - {x: -452.5, y: -365}
+      - {x: -231.5, y: -356}
+      - {x: -72.5, y: -350}
+      - {x: 196.5, y: -345}
+      - {x: 346.5, y: -348}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
