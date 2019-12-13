@@ -94,7 +94,7 @@ Shader "Universal Render Pipeline/Unlit Sprite"
                 half4 texColor = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, uv);
                 half3 color = texColor.rgb * _Color.rgb;
                 half alpha = texColor.a * _Color.a;
-                clip( alpha - _Cutoff);
+                clip( alpha - _Cutoff );
 
 #ifdef _ALPHAPREMULTIPLY_ON
                 color *= alpha;
