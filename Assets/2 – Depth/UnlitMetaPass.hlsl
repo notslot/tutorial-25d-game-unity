@@ -19,6 +19,7 @@ struct Varyings
 {
     float4 positionCS   : SV_POSITION;
     float2 uv           : TEXCOORD0;
+    float4 color        : COLOR;
 };
 
 Varyings UniversalVertexMeta(Attributes input)
@@ -33,7 +34,7 @@ Varyings UniversalVertexMeta(Attributes input)
 half4 UniversalFragmentMetaUnlit(Varyings input) : SV_Target
 {
     MetaInput metaInput = (MetaInput)0;
-    metaInput.Albedo = _Color.rgb * SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv).rgb;
+    metaInput.Albedo = input.color.rgb * SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv).rgb;
 
     return MetaFragment(metaInput);
 }
