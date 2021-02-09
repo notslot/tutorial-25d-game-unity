@@ -10,9 +10,9 @@ struct Attributes
     float2 uv0          : TEXCOORD0;
     float2 uv1          : TEXCOORD1;
     float2 uv2          : TEXCOORD2;
-#ifdef _TANGENT_TO_WORLD
+    #ifdef _TANGENT_TO_WORLD
     float4 tangentOS     : TANGENT;
-#endif
+    #endif
 };
 
 struct Varyings
